@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    html ,body{
+        width: 100%;
+        height:100%; 
+        background-color: indianred;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+       
+        border-radius: 10px;
+        width: 300px;
+        height: 400px;
+        background-color: #fff;
+        padding:30px;
+        text-align: center;
+    }
+    .container img
+    {
+        height: 55%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .container h1{
+        font-size: 25px;
+        margin:10px 0;
+    }
+    .container h5{
+        font-size: 20;
+    }
+    .container h5{
+        font-size:25px;
+        color:red;
+        margin-bottom:20px;
+    }
+    .container button{
+        background-color: cadetblue;
+        color:#fff;
+        font-weight: 700;
+        padding: 12px 20px;
+        border-radius: 5px;
+        border:none;
+        margin: 5px;
+    }
+    .btn-container{
+        display: flex;
+    }
+   </style>
+</head>
+<body>
+   <div class="container">
+    <img src="Priya.jpg" alt="Angel Priya ">
+    <h1>Angel Priya</h1>
+    <h5>Stranger</h5>
+   <div class="btn-container">
+    <button class="remove">Remove Friend</button>
+    <button class="add">Add Friend</button>
+   </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>

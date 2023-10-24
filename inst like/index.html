@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html,body{
+        height:100%;
+        width: 100%;
+    }
+    body{
+        background-color: lightseagreen;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        height:400px;
+        width: 350px;
+        border-radius: 10px;
+        position: relative;
+        background-color:white ;
+        overflow: hidden;
+    }
+    .container img{
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+        }
+        .container i{
+            color:#fff;
+            font-size: 75px;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%) scale(0);
+            opacity: 0;
+            transition: transform ease 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <img class="model" src="https://images.unsplash.com/photo-1697955782802-4db7d7ae2545?auto=format&fit=crop&q=60&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D" alt="Sundar">
+        <i class="ri-heart-fill"></i>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

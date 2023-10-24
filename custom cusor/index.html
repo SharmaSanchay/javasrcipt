@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        color:#fff;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+    }
+    .main{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(0,0,0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cursor{
+        height: 20px;
+        width: 20px;
+        background-color:white;
+        mix-blend-mode: difference;
+        border-radius: 50%;
+        position: absolute;
+        transition: all linear 0.2s;
+    }
+    h1{
+        font-size: 9vw;
+        font-weight: 900;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+         <div class="cursor"></div>
+    <h1>SANCHAY</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            color: #fff;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        #main{
+            height: 100%;
+            width: 100%;
+            background-color: #111;
+            position: relative;
+        }
+        .elem{
+            height: 120px;
+            width: 100%;
+            border-bottom: 2px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position:relative;
+        }
+        .elem h1{
+          font-size:6vw;  
+          position: relative;
+          z-index: 9;
+          mix-blend-mode: difference;
+        }
+        .elem img{
+            height:140px;
+            width: 140px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            position: absolute;
+            opacity: 0;
+            transition: all linear 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="elem">
+            <h1>Tiger</h1>
+            <img src="https://images.unsplash.com/photo-1697275021697-59e7ff8760ec?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fFM0TUtMQXNCQjc0fHxlbnwwfHx8fHw%3D" alt="">
+        </div>
+        <div class="elem">
+            <h1>Lion</h1>
+            <img src="https://images.unsplash.com/photo-1697792480519-3e2e7eba4be0?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="elem">
+            <h1>Cat</h1>
+           <img src="https://images.unsplash.com/photo-1697874633717-0db2bfc8afd8?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="elem">
+            <h1>Dog</h1>
+           <img src="https://images.unsplash.com/photo-1697432907709-68134c2c4c5b?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1MHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
